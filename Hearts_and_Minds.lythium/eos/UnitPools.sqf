@@ -75,7 +75,7 @@ _tempArray=[];
 };
 // ADD CLASSNAMES 
 	if (_faction==5) then {
-	_InfPool=	["cfp_o_is_sniper","cfp_o_is_at","cfp_o_is_team_leader","cfp_o_is_squad_leader","cfp_o_is_rifleman","cfp_o_is_irregular","cfp_o_is_militaman","cfp_o_is_rifleman","cfp_o_is_at"];	
+	_InfPool=	["LOP_ISTS_OPF_Infantry_Rifleman_5","LOP_ISTS_OPF_Infantry_TL","LOP_ISTS_OPF_Infantry_Engineer","LOP_ISTS_OPF_Infantry_Corpsman","LOP_ISTS_OPF_Infantry_Rifleman_4","LOP_ISTS_OPF_Infantry_Rifleman_6","LOP_ISTS_OPF_Infantry_GL","LOP_ISTS_OPF_Infantry_Rifleman_3","LOP_ISTS_OPF_Infantry_Marksman","LOP_ISTS_OPF_Infantry_AT","LOP_ISTS_OPF_Infantry_AR","LOP_ISTS_OPF_Infantry_AR_Asst","LOP_ISTS_OPF_Infantry_SL","LOP_ISTS_OPF_Infantry_SL","LOP_ISTS_OPF_Infantry_SL"];	
 	_ArmPool=	[];
 	_MotPool=	[];
 	_ACHPool=	[];
