@@ -108,8 +108,6 @@ addons[]=
 	"SMA_Aimpoint",
 	"UK3CB_BAF_Weapons_Ammo",
 	"rhsusf_sounds",
-	"jsrs_soundmod_rhs_usf_weapons",
-	"CSW_FN57",
 	"ace_gforces"
 };
 class AddonsMetaData
