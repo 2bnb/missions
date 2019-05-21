@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1706;
+		nextID=1713;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=448;
+		nextID=456;
 	};
 	class Camera
 	{
-		pos[]={11873.554,49.613911,2379.2244};
-		dir[]={-0.61754459,-0.77816761,-0.11549595};
-		up[]={-0.76495147,0.62799597,-0.14306214};
-		aside[]={-0.18385856,-1.1320808e-006,0.98306018};
+		pos[]={11840.471,73.32402,2365.8901};
+		dir[]={0.28166288,-0.71246934,0.64288616};
+		up[]={0.28594536,0.7016257,0.65265822};
+		aside[]={0.91605186,-1.6009435e-006,-0.40133908};
 	};
 };
 binarizationWanted=0;
@@ -103,17 +103,13 @@ addons[]=
 	"ace_hearing",
 	"ace_captives",
 	"ace_huntir",
-	"VSM_Vests_Config",
-	"adv_aceCPR",
-	"SMA_Aimpoint",
-	"UK3CB_BAF_Weapons_Ammo",
-	"ace_gforces"
+	"VSM_Vests_Config"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=66;
+		items=69;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -560,6 +556,26 @@ class AddonsMetaData
 			name="jsrs_soundmod_rhs_usf_weapons";
 			author="lordjarhead";
 		};
+		class Item66
+		{
+			className="rhs_c_bmp3";
+			name="BMP-3 IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item67
+		{
+			className="JSRS_RHS_BMP3";
+			name="JSRS_RHS_BMP3";
+			author="LordJarhead";
+		};
+		class Item68
+		{
+			className="A3_Armor_F_Tank";
+			name="Arma 3 Tank - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=2442963;
@@ -583,24 +599,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -615,6 +613,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -994,7 +1010,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=459;
+		items=461;
 		class Item0
 		{
 			dataType="Marker";
@@ -1030,7 +1046,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=5;
 			type="RHS_M2A3";
@@ -3364,7 +3380,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=202;
@@ -3424,7 +3440,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=203;
@@ -3465,7 +3481,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=204;
@@ -5266,7 +5282,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=251;
 			type="UK3CB_BAF_Merlin_HC3_32";
@@ -5307,7 +5323,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=252;
 			type="UK3CB_BAF_Merlin_HC3_32";
@@ -5348,7 +5364,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=253;
 			type="UK3CB_BAF_Merlin_HC3_18_GPMG";
@@ -5676,7 +5692,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=261;
@@ -5737,7 +5753,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=262;
@@ -5779,7 +5795,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=263;
@@ -5839,7 +5855,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=264;
@@ -5900,7 +5916,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=265;
@@ -5942,7 +5958,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 				dynamicSimulation=1;
 			};
 			id=266;
@@ -10903,7 +10919,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				reportOwnPosition=1;
 			};
 			id=457;
@@ -10945,7 +10961,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				reportOwnPosition=1;
 			};
 			id=458;
@@ -10986,7 +11002,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				reportOwnPosition=1;
 			};
 			id=459;
@@ -11028,7 +11044,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=468;
 			type="B_APC_Tracked_01_CRV_F";
@@ -11069,7 +11085,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=469;
 			type="B_APC_Tracked_01_CRV_F";
@@ -11110,7 +11126,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=470;
 			type="B_Truck_01_fuel_F";
@@ -11170,7 +11186,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=471;
 			type="B_Truck_01_fuel_F";
@@ -11230,7 +11246,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=472;
 			type="B_Truck_01_ammo_F";
@@ -11290,7 +11306,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=473;
 			type="B_Truck_01_ammo_F";
@@ -11350,7 +11366,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=474;
 			type="B_Truck_01_Repair_F";
@@ -11410,7 +11426,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=475;
 			type="B_Truck_01_Repair_F";
@@ -11940,7 +11956,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=488;
@@ -12001,7 +12017,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=489;
@@ -12103,7 +12119,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=491;
@@ -12164,7 +12180,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=492;
@@ -12225,7 +12241,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=493;
@@ -12286,7 +12302,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=494;
@@ -12347,7 +12363,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=495;
@@ -13571,7 +13587,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=536;
@@ -13612,7 +13628,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=537;
@@ -13654,7 +13670,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=538;
@@ -13696,7 +13712,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=539;
@@ -13738,7 +13754,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=540;
@@ -13780,7 +13796,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=541;
@@ -13822,7 +13838,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=542;
@@ -13864,7 +13880,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=543;
@@ -16682,7 +16698,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Olive";
 			};
 			id=681;
@@ -16888,7 +16904,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Olive";
 			};
 			id=682;
@@ -17094,7 +17110,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Olive";
 			};
 			id=683;
@@ -17299,7 +17315,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Olive";
 			};
 			id=684;
@@ -17505,7 +17521,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=685;
 			type="B_T_LSV_01_armed_F";
@@ -17594,7 +17610,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Dazzle"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=686;
 			type="B_T_LSV_01_armed_F";
@@ -17683,7 +17699,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=695;
 			type="RHS_MELB_MH6M";
@@ -17724,7 +17740,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=696;
 			type="RHS_MELB_MH6M";
@@ -17765,7 +17781,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=697;
 			type="RHS_MELB_MH6M";
@@ -17806,7 +17822,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=698;
 			type="RHS_MELB_MH6M";
@@ -17847,7 +17863,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="rhsusf_mag_gau19_melb_left;;;rhs_mag_M151_19;";
 			};
 			id=699;
@@ -17908,7 +17924,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="rhsusf_mag_gau19_melb_left;;;rhs_mag_M151_19;";
 			};
 			id=700;
@@ -17969,7 +17985,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="rhsusf_mag_gau19_melb_left;;;rhs_mag_M151_19;";
 			};
 			id=701;
@@ -18030,7 +18046,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="rhsusf_mag_gau19_melb_left;;;rhs_mag_M151_19;";
 			};
 			id=702;
@@ -18091,7 +18107,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="UK3CB_BAF_PylonRack_4Rnd_Hellfire_K;UK3CB_BAF_PylonPod_19Rnd_CRV7_HEISAP;UK3CB_BAF_PylonPod_19Rnd_CRV7_HEISAP;UK3CB_BAF_PylonRack_4Rnd_Hellfire_N;";
 			};
 			id=714;
@@ -18133,7 +18149,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				pylons="UK3CB_BAF_PylonRack_4Rnd_Hellfire_K;UK3CB_BAF_PylonPod_19Rnd_CRV7_HEISAP;UK3CB_BAF_PylonPod_19Rnd_CRV7_HEISAP;UK3CB_BAF_PylonRack_4Rnd_Hellfire_N;";
 			};
 			id=715;
@@ -20164,7 +20180,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=770;
 			type="B_MRAP_01_F";
@@ -20205,7 +20221,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=771;
 			type="B_MRAP_01_F";
@@ -20246,7 +20262,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=772;
 			type="B_MRAP_01_F";
@@ -20287,7 +20303,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Woodland";
 			};
 			id=773;
@@ -20329,7 +20345,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=856;
@@ -20390,7 +20406,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=857;
@@ -21107,7 +21123,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=874;
 			type="UK3CB_BAF_Coyote_Passenger_L134A1_W";
@@ -21147,7 +21163,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=875;
 			type="UK3CB_BAF_Coyote_Passenger_L134A1_W";
@@ -21188,7 +21204,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=876;
 			type="UK3CB_BAF_Coyote_Passenger_L134A1_W";
@@ -21229,7 +21245,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=888;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
@@ -21270,7 +21286,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=889;
 			type="UK3CB_BAF_Jackal2_L134A1_W";
@@ -21311,7 +21327,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=890;
 			type="UK3CB_BAF_Jackal2_L134A1_W";
@@ -21352,7 +21368,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Desert";
 			};
 			id=894;
@@ -21393,7 +21409,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Desert";
 			};
 			id=895;
@@ -21434,7 +21450,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Desert";
 			};
 			id=896;
@@ -21476,7 +21492,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Desert";
 			};
 			id=897;
@@ -21637,7 +21653,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Guerilla_02";
 			};
 			id=693;
@@ -21678,7 +21694,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=689;
 			type="B_APC_Wheeled_01_cannon_F";
@@ -21719,7 +21735,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=690;
 			type="B_APC_Wheeled_01_cannon_F";
@@ -21760,7 +21776,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=549;
 			type="B_APC_Wheeled_01_cannon_F";
@@ -21801,7 +21817,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=548;
 			type="B_APC_Wheeled_01_cannon_F";
@@ -21842,7 +21858,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Guerilla_02"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Guerilla_02";
 			};
 			id=692;
@@ -21884,7 +21900,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Guerilla_02"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Guerilla_02";
 			};
 			id=691;
@@ -21925,7 +21941,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Guerilla_02"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Guerilla_02";
 			};
 			id=694;
@@ -21967,7 +21983,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=956;
 			type="RHS_M2A3";
@@ -22009,7 +22025,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=957;
 			type="RHS_M2A3";
@@ -22050,7 +22066,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=959;
 			type="RHS_M2A3";
@@ -22091,7 +22107,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=960;
 			type="RHS_M2A3";
@@ -22132,7 +22148,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=961;
 			type="RHS_M2A3";
@@ -22173,7 +22189,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=962;
 			type="RHS_M2A3";
@@ -22213,7 +22229,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=963;
 			type="I_Heli_light_03_dynamicLoadout_F";
@@ -22273,7 +22289,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=964;
 			type="I_Heli_light_03_dynamicLoadout_F";
@@ -22367,7 +22383,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1001;
 			type="rhsusf_M1117_O";
@@ -22408,7 +22424,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1009;
 			type="rhsusf_M1117_O";
@@ -22448,7 +22464,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1010;
 			type="rhsusf_M1117_O";
@@ -22488,7 +22504,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1011;
 			type="rhsusf_M1117_O";
@@ -22528,7 +22544,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1013;
 			type="rhsusf_M1230_M2_usarmy_wd";
@@ -22568,7 +22584,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1014;
 			type="rhsusf_M1230_M2_usarmy_wd";
@@ -22608,7 +22624,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1016;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22648,7 +22664,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1017;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22688,7 +22704,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1051;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22729,7 +22745,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1052;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22770,7 +22786,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1053;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22811,7 +22827,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,nil] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1054;
 			type="rhsusf_M1220_M153_M2_usarmy_wd";
@@ -22852,7 +22868,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1088;
 			type="B_Truck_01_Repair_F";
@@ -22893,7 +22909,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1089;
 			type="B_Truck_01_Repair_F";
@@ -22934,7 +22950,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_mrpmonitor;}";
+				init="";
 			};
 			id=1090;
 			type="B_Truck_01_medical_F";
@@ -22975,7 +22991,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_mrpmonitor;}";
+				init="";
 			};
 			id=1091;
 			type="B_Truck_01_medical_F";
@@ -23016,7 +23032,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1092;
 			type="B_Truck_01_ammo_F";
@@ -23057,7 +23073,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1093;
 			type="B_Truck_01_ammo_F";
@@ -23098,7 +23114,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1094;
 			type="B_Truck_01_fuel_F";
@@ -23139,7 +23155,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,FALSE] spawn Requiem_fnc_vmonitor;}";
+				init="";
 			};
 			id=1096;
 			type="B_Truck_01_covered_F";
@@ -23180,7 +23196,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1097;
 			type="B_Truck_01_covered_F";
@@ -23221,7 +23237,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1098;
 			type="B_Truck_01_covered_F";
@@ -23262,7 +23278,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1099;
 			type="B_Truck_01_covered_F";
@@ -23303,7 +23319,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1100;
 			type="B_Truck_01_covered_F";
@@ -23343,7 +23359,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1101;
 			type="rhsusf_M1083A1P2_WD_fmtv_usarmy";
@@ -23383,7 +23399,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1102;
 			type="rhsusf_M1083A1P2_WD_fmtv_usarmy";
@@ -23423,7 +23439,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1103;
 			type="rhsusf_M1083A1P2_WD_fmtv_usarmy";
@@ -23464,7 +23480,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1105;
 			type="B_Truck_01_fuel_F";
@@ -23505,7 +23521,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1106;
 			type="B_Truck_01_fuel_F";
@@ -23564,7 +23580,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1107;
 			type="B_Truck_01_ammo_F";
@@ -23624,7 +23640,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,10,nil] spawn Requiem_fnc_bmonitor;}";
+				init="";
 			};
 			id=1108;
 			type="B_Truck_01_Repair_F";
@@ -23912,7 +23928,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=1327;
@@ -23954,7 +23970,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [this,900,[""Green"",1]] spawn Requiem_fnc_vmonitor;}";
+				init="";
 				textures="Green";
 			};
 			id=1328;
@@ -30464,6 +30480,326 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item459
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11777.761,26.218626,2436.8499};
+				angles[]={6.2822089,1.589781,0.0069740652};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="rhs_sand";
+			};
+			id=1706;
+			type="rhs_bmp3m_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cRHSBMP3NumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Iraqi";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalPlatoon_type";
+					expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PlatoonGDR";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="rhs_decalPlatoon";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cRHSBMP3PlnSymPlaces,  _this getVariable ['rhs_decalPlatoon_type','Platoon'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_ak74m"",""rhs_weap_rpg26"",""rhs_weap_rpg7"",""FirstAidKit"",""Medikit""],[4,2,1,4,1]],[[""rhs_30Rnd_545x39_7N10_AK"",""rhs_10Rnd_762x54mmR_7N1"",""rhs_100Rnd_762x54mmR"",""rhs_mag_rdg2_white"",""rhs_mag_rgd5"",""rhs_VOG25"",""rhs_VG40OP_white"",""rhs_GRD40_White"",""rhs_rpg26_mag"",""rhs_rpg7_OG7V_mag""],[30,10,3,2,9,20,5,5,2,2]],[[],[]],[[""rhs_sidor"",""rhs_rpg""],[7,1]]],false]";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_decalNumber";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSBMP3NumberPlaces}else{[_this, [['Number', cRHSBMP3NumberPlaces, _this getVariable ['rhs_decalNumber_type','DefaultRed'], _value] ] ] call rhs_fnc_decalsInit}};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=69;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item460
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11783.632,25.726034,2436.5535};
+				angles[]={0.0042567407,1.5297284,0.002990101};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Indep_03";
+			};
+			id=1708;
+			type="I_LT_01_cannon_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[2]],[[""SmokeShell"",""SmokeShellGreen""],[2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=8;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="showTools";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="showCamonetHull";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="showBags";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="showSLATHull";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
