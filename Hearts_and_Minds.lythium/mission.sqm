@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=440;
+		nextID=448;
 	};
 	class Camera
 	{
-		pos[]={11873.554,49.613911,2379.2244};
-		dir[]={-0.61754459,-0.77816761,-0.11549595};
-		up[]={-0.76495147,0.62799597,-0.14306214};
-		aside[]={-0.18385856,-1.1320808e-006,0.98306018};
+		pos[]={11842.261,56.912865,2361.3313};
+		dir[]={0.1541689,-0.91884321,0.36360446};
+		up[]={0.35867482,0.39467597,0.8459208};
+		aside[]={0.92076069,-1.4534453e-006,-0.3904022};
 	};
 };
 binarizationWanted=0;
@@ -108,6 +108,8 @@ addons[]=
 	"SMA_Aimpoint",
 	"UK3CB_BAF_Weapons_Ammo",
 	"rhsusf_sounds",
+	"jsrs_soundmod_rhs_usf_weapons",
+	"CSW_FN57",
 	"ace_gforces"
 };
 class AddonsMetaData
@@ -584,6 +586,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -598,24 +618,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -995,7 +997,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=546;
+		items=544;
 		class Item0
 		{
 			dataType="Marker";
@@ -16062,18 +16064,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11836.499,25.295773,2368.0203};
-				angles[]={0.0019834081,1.5385252,0.0045934827};
+				position[]={11837.936,25.301804,2368.5198};
+				angles[]={0.0019896752,1.5385252,0.0045902161};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[WEST] call bnb_f_core_fnc_arsenal; " \n "}";
+				init="call{[""West""] call bnb_e_core_fnc_arsenal;}";
 			};
 			id=661;
 			type="B_CargoNet_01_ammo_F";
-			atlOffset=-0.0004234314;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31394,94 +31396,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11836.357,25.290167,2370.5479};
-				angles[]={0.0026294757,1.5385252,0.0045934827};
+				position[]={11837.148,25.284077,2374.4561};
+				angles[]={0.0022863813,1.5385252,0.0049218284};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[WEST] call bnb_f_core_fnc_arsenal; " \n "}";
-			};
-			id=1684;
-			type="B_CargoNet_01_ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item544
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11836.26,25.283577,2372.8882};
-				angles[]={0.0026294757,1.5385252,0.0045934827};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{[WEST] call bnb_f_core_fnc_arsenal; " \n "}";
-			};
-			id=1685;
-			type="B_CargoNet_01_ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item545
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11836.127,25.276966,2375.3662};
-				angles[]={0.0022902426,1.5385252,0.0049193022};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{[WEST] call bnb_f_core_fnc_arsenal; " \n "}";
+				init="call{[""West""] call bnb_e_core_fnc_arsenal;}";
 			};
 			id=1686;
 			type="B_CargoNet_01_ammo_F";
