@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.pbo filter=lfs diff=lfs merge=lfs -text
+*.bak filter=lfs diff=lfs merge=lfs -text
+*.pbo.bak filter=lfs diff=lfs merge=lfs -text

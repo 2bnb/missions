@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=448;
+		nextID=456;
 	};
 	class Camera
 	{
@@ -97,19 +97,6 @@ addons[]=
 	"VSM_AOR1_Config",
 	"ace_maptools",
 	"ace_flashlights",
-	"ace_microdagr",
-	"ace_medical",
-	"ace_trenches",
-	"ace_hearing",
-	"ace_captives",
-	"ace_huntir",
-	"VSM_Vests_Config",
-	"adv_aceCPR",
-	"SMA_Aimpoint",
-	"UK3CB_BAF_Weapons_Ammo",
-	"rhsusf_sounds",
-	"jsrs_soundmod_rhs_usf_weapons",
-	"CSW_FN57",
 	"ace_gforces"
 };
 class AddonsMetaData
@@ -586,24 +573,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -618,6 +587,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -16071,7 +16058,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[""West""] call bnb_e_core_fnc_arsenal;}";
+				init="call{[""WEST""] call bnb_f_core_fnc_arsenal;}";
 			};
 			id=661;
 			type="B_CargoNet_01_ammo_F";
@@ -31403,7 +31390,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[""West""] call bnb_e_core_fnc_arsenal;}";
+				init="call{[""WEST""] call bnb_f_core_fnc_arsenal;}";
 			};
 			id=1686;
 			type="B_CargoNet_01_ammo_F";
