@@ -215,7 +215,7 @@ class Params {
         texts[]={"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
         default = 1;
     };
-    class btc_p_set_skill_aimingShake {  // Set skill, aimingShake
+    class btc_p_set_skill_aimingShake { // Set skill, aimingShake
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_BTC_HAM_PARAM_SKILL_AIMSKILL"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10};
         texts[]={"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
@@ -350,7 +350,8 @@ class Params {
     class btc_p_auto_headless { // Autodetect Headless client:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_AUTOHEADLESS"]);
         values[]={0,1};
-        texts[]={$STR_DISABLED,$STR_ENAB        default = 1;
+        texts[]={$STR_DISABLED,$STR_ENABLED};
+        default = 1;
     };
     class btc_p_debug { // Debug:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_DEBUG"]);
