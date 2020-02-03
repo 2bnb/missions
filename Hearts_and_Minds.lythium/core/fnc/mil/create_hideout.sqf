@@ -41,7 +41,7 @@ if (_pos isEqualTo []) then {
             {!(_x getVariable ["active", false])} &&
             {_x distance (getMarkerPos btc_respawn_marker) > btc_hideout_safezone} &&
             {!(_x getVariable ["has_ho", false])} &&
-            {_x getVariable ["type", ""] in ["NameLocal", "Hill", "NameVillage", "Airport"]}
+            {_x getVariable ["type", ""] in ["NameLocal", "Hill", "NameVillage", "Airport","Ambush","LAmbush"]}
         )};
     _city = selectRandom _useful;
 

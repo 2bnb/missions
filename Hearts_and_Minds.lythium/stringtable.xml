@@ -3,18 +3,18 @@
     <Package name="Description">
         <Container name="Description: Main">
             <Key ID="STR_BTC_HAM_DESCR_NAME">
-                <Original>Hearts and Minds</Original>
-                <Spanish>Hearts and Minds</Spanish>
-                <German>Hearts and Minds</German>
+                <Original>Hearts and Minds modified by Ford [2BNB]</Original>
+                <Spanish>Hearts and Minds modified by Ford [2BNB]</Spanish>
+                <German>Hearts and Minds modified by Ford [2BNB]</German>
                 <Portuguese>Corações e Mentes</Portuguese>
                 <Chinesesimp>心灵与智慧</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_DESCR_MISSION">
-                <Original>www.blacktemplars.altervista.org</Original>
-                <Spanish>www.blacktemplars.altervista.org</Spanish>
-                <German>www.blacktemplars.altervista.org</German>
-                <Portuguese>www.blacktemplars.altervista.org</Portuguese>
-                <Chinesesimp>www.blacktemplars.altervista.org</Chinesesimp>
+                <Original>www.2bnb.eu</Original>
+                <Spanish>www.2bnb.eu</Spanish>
+                <German>www.2bnb.eu</German>
+                <Portuguese>www.2bnb.eu</Portuguese>
+                <Chinesesimp>www.2bnb.eu</Chinesesimp>
             </Key>
         </Container>
     </Package>
