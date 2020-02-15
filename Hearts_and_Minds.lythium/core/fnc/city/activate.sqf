@@ -64,8 +64,6 @@ if (!_is_init) then {
         case "NameCityCapital" : {random 6};
         case "Airport" : {0};
         case "NameMarine" : {0};
-        case "Ambush" : {random 2};
-        case "LAmbush" : {random 4};
     });
 
     private _ratio_ied = _ratio;
@@ -113,8 +111,6 @@ if !(_data_units isEqualTo []) then {
         case "NameCityCapital" : {15};
         case "Airport" : {15};
         case "NameMarine" : {1};
-        case "Ambush" : {8};
-        case "LAmbush" : {12};
         default {0};
     });
 
@@ -130,8 +126,6 @@ if !(_data_units isEqualTo []) then {
             case "NameCity" : {10};
             case "NameCityCapital" : {19};
             case "Airport" : {6};
-            case "Ambush" : {0};
-            case "LAmbush" : {0};
             default {2};
         });
         [_city, _radius/3, round (_p_civ_group_ratio * random _max_number_group)] call btc_fnc_civ_populate;
